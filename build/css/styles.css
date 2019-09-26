@@ -470,24 +470,23 @@ template {
 /* Mixin for Heading 2 site LAMBDA
 use margin-bottom with header-two... mixins */
 
-/* Add
-background: url(...) no-repeat;
-background-size: 100% auto contain;
-before using this selector 
-Use @extend */
+/* Adaptive background:
+Add
+background-image: url(...);
+before using this selector
+Use @extend %selector-name*/
 
 .reviews,
 .quote {
   margin: 0px auto;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  background-position: center center;
+  background-size: cover;
 }
 
 .reviews {
   max-width: 1600px;
-  background: url(/images/deco-image/reviews-background.jpg) no-repeat;
-  background-size: cover;
+  background-image: url(/images/deco-image/reviews-background.jpg);
 }
 
 .container-reviews {
@@ -500,8 +499,7 @@ Use @extend */
   max-width: 770px;
   margin: 0px auto;
   padding: 60px 0px 94px;
-  background: url(/images/deco-image/reviews-text-background.png) no-repeat;
-  background-size: cover;
+  background-image: url(/images/deco-image/reviews-text-background.png);
 }
 
 .quote-title {

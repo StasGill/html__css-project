@@ -17,8 +17,7 @@
 
 .reviews {
   max-width: 1600px;
-  background: url(/images/deco-image/reviews-background.jpg) no-repeat;
-  background-size: cover;
+  background-image: url(/images/deco-image/reviews-background.jpg);
   @extend %section-background;
 }
 
@@ -31,8 +30,7 @@
   max-width: 770px;
   margin: 0px auto;
   padding: 60px 0px 94px;
-  background: url(/images/deco-image/reviews-text-background.png) no-repeat;
-  background-size: cover;
+  background-image: url(/images/deco-image/reviews-text-background.png);
   @extend %section-background;
 }
 

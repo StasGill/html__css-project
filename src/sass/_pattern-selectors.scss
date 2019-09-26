@@ -1,14 +1,14 @@
-/* Add
-background: url(...) no-repeat;
-background-size: 100% auto contain;
-before using this selector 
-Use @extend */
+/* Adaptive background:
+Add
+background-image: url(...);
+before using this selector
+Use @extend %selector-name*/
 
 %section-background {
   margin: 0px auto;
   background: {
     repeat: no-repeat;
-    attachment: fixed;
-    position: center;
+    position: center center;
+    size: cover;
   }
 }
