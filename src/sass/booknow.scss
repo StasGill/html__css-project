@@ -1,0 +1,38 @@
+@import './header-mix';
+@import './pattern-selectors';
+@import './container-mix';
+
+.reserve {
+  max-width: 1600px;
+  background-image: url(/images/deco-image/reserve-background.png);
+  @extend %section-background;
+}
+
+.content-block {
+  @include main-container;
+  padding: 100px 40px 104px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.img-block {
+  width: 570px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.food {
+  display: block;
+}
+
+.reserve-now {
+  max-width: 430px;
+}
+
+.reserve-title {
+  @include header-two;
+  line-height: 80px;
+  @include header-two-orange-decor;
+  margin-bottom: 24px;
+}
