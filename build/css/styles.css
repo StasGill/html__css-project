@@ -574,6 +574,11 @@ Use @extend %selector-name*/
 .input__element {
   display: flex;
   flex-direction: column;
+  margin-bottom: 26px;
+}
+
+.form__input .input__element:nth-last-child(-n+2) {
+  margin-bottom: 0px;
 }
 
 .input__element label {
@@ -608,11 +613,6 @@ Use @extend %selector-name*/
   outline-offset: 0px;
 }
 
-.visitor--name,
-.visitor--email {
-  margin-bottom: 28px;
-}
-
 .reserve-button {
   width: 202px;
   height: 36px;
@@ -632,6 +632,39 @@ Use @extend %selector-name*/
   outline: 1px solid #c89f2d;
   color: #c89f2d;
   cursor: pointer;
+}
+
+.reserve-button ::-webkit-datetime-edit {
+  padding: 1em;
+}
+
+.reserve-button ::-webkit-datetime-edit-fields-wrapper {
+  background: silver;
+}
+
+.reserve-button ::-webkit-datetime-edit-text {
+  color: red;
+  padding: 0 0.3em;
+}
+
+.reserve-button ::-webkit-datetime-edit-month-field {
+  color: blue;
+}
+
+.reserve-button ::-webkit-datetime-edit-day-field {
+  color: green;
+}
+
+.reserve-button ::-webkit-datetime-edit-year-field {
+  color: purple;
+}
+
+.reserve-button ::-webkit-inner-spin-button {
+  display: none;
+}
+
+.reserve-button ::-webkit-calendar-picker-indicator {
+  background: url(/images/deco-image/picker-indicator.png);
 }
 
 /* Mixin for Heading 2 site LAMBDA

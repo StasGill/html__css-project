@@ -75,6 +75,11 @@
 .input__element {
   display: flex;
   flex-direction: column;
+  margin-bottom: 26px;
+}
+
+.form__input .input__element:nth-last-child(-n+2) {
+  margin-bottom: 0px;
 }
 
 .input__element label {
@@ -109,11 +114,6 @@
   outline-offset: 0px;
 }
 
-.visitor--name,
-.visitor--email {
-  margin-bottom: 28px;
-}
-
 .reserve-button {
   width: 202px;
   height: 36px;
@@ -133,4 +133,17 @@
   outline: 1px solid #c89f2d;
   color: #c89f2d;
   cursor: pointer;
+}
+
+::-webkit-datetime-edit {     padding: 1em;
+  }
+  ::-webkit-datetime-edit-fields-wrapper {
+    background: silver;
+  }
+  ::-webkit-datetime-edit-text { color: red; padding: 0 0.3em; }
+  ::-webkit-datetime-edit-month-field { color: blue; }
+  ::-webkit-datetime-edit-day-field { color: green; }
+  ::-webkit-datetime-edit-year-field { color: purple; }
+  ::-webkit-inner-spin-button { display: none; }
+  ::-webkit-calendar-picker-indicator { background: url(/images/deco-image/picker-indicator.png); }
 }
