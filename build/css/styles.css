@@ -493,7 +493,7 @@ Use @extend %selector-name*/
 .content-block {
   max-width: 1250px;
   margin: 0px auto;
-  padding: 100px 40px 104px;
+  padding: 100px 40px 102px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -506,7 +506,7 @@ Use @extend %selector-name*/
 }
 
 .food {
-  display: block;
+  display: inline-block;
 }
 
 .reserve-now {
@@ -554,9 +554,16 @@ Use @extend %selector-name*/
 
 .reserve-form {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   font-size: 0px;
+}
+
+.form__input {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 34px;
 }
 
 .visitor {
@@ -583,6 +590,7 @@ Use @extend %selector-name*/
 .reserve-button {
   width: 200px;
   height: 36px;
+  margin: 0px auto;
 }
 
 /* Mixin for Heading 2 site LAMBDA

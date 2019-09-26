@@ -10,7 +10,7 @@
 
 .content-block {
   @include main-container;
-  padding: 100px 40px 104px;
+  padding: 100px 40px 102px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -23,7 +23,7 @@
 }
 
 .food {
-  display: block;
+  display: inline-block;
 }
 
 .reserve-now {
@@ -56,9 +56,16 @@
 
 .reserve-form {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   font-size: 0px;
+}
+
+.form__input {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 34px;
 }
 
 .visitor {
@@ -85,4 +92,5 @@
 .reserve-button {
   width: 200px;
   height: 36px;
+  margin: 0px auto;
 }
