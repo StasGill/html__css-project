@@ -12,12 +12,24 @@
       </article>
       <form action="" class="reserve-form">
         <div class="form__input">
-          <textarea name="user-name" id="1" cols="1" rows="1" placeholder="your name *" required class="visitor visitor--name"></textarea>
-          <textarea name="user-email" id="2" cols="1" rows="1" placeholder="your email *" required class="visitor visitor--email"></textarea>
-          <input type="text" class="what">
-          <input type="text" class="what">
+          <div class="input__element">
+            <label class for="name">Name</label>
+            <textarea name="user-name" id="name" cols="1" rows="1" placeholder="your name *" required class="form__element visitor--name"></textarea>
+          </div>
+          <div class="input__element">
+            <label for="email">Email</label>
+            <textarea name="user-email" id="email" cols="1" rows="1" placeholder="your email *" required class="form__element visitor--email"></textarea>
+          </div>
+          <div class="input__element">
+            <label for="date">Date</label>
+            <input type="date" id="date" name="Date" class="form__element what" placeholder="date *">
+          </div>
+          <div class="input__element">
+            <label for="party">Party number</label>
+            <input type="text" id="party" class="form__element what">
+          </div>
         </div>
-        <button class="reserve-button">Bock now</button>
+        <button class="reserve-button">Book now!</button>
       </form>
     </div>
   </div>

@@ -16,14 +16,13 @@
 .quote {
   max-width: 770px;
   margin: 0px auto;
-  padding: 60px 0px 94px;
+  padding: 56px 0px 94px;
   background-image: url(/images/deco-image/reviews-text-background.png);
   @extend %section-background;
 }
 
 .quote-title {
   @include header-two;
-  line-height: 80px;
   @include header-two-white-decor;
   margin-bottom: 24px;
 }
