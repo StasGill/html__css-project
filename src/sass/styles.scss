@@ -12,7 +12,6 @@
 @import './reviews.scss';
 @import './footer.scss';
 @import './header-mix';
-@import './width-variables.scss';
 @import './pattern-selectors';
 @import './container-mix';
 
@@ -49,9 +48,9 @@
 }
 
 .quote-disc {
-  font-family: 'Gentium Book Basic';
+  font-family: 'Gentium Book Basic', latin;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 25px;
   line-height: 45px;
   color: #dde0df;
   text-align: center;
