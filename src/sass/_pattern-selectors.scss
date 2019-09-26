@@ -1,0 +1,14 @@
+/* Add
+background: url(...) no-repeat;
+background-size: 100% auto contain;
+before using this selector 
+Use @extend */
+
+%section-background {
+  margin: 0px auto;
+  background: {
+    repeat: no-repeat;
+    attachment: fixed;
+    position: center;
+  }
+}

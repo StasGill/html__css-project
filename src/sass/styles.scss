@@ -12,3 +12,66 @@
 @import './reviews.scss';
 @import './footer.scss';
 @import './header-mix';
+@import './width-variables.scss';
+@import './pattern-selectors';
+@import './container-mix';
+
+.reviews {
+  max-width: 1600px;
+  background: url(/images/deco-image/reviews-background.jpg) no-repeat;
+  background-size: cover;
+  @extend %section-background;
+}
+
+.container-reviews {
+  @include main-container;
+  padding: 100px 40px 102px;
+}
+
+.quote {
+  max-width: 770px;
+  margin: 0px auto;
+  padding: 60px 0px 94px;
+  background: url(/images/deco-image/reviews-text-background.png) no-repeat;
+  background-size: 1cover;
+  @extend %section-background;
+}
+
+.quote-title {
+  @include header-two;
+  line-height: 80px;
+  @include header-two-white-decor;
+  margin-bottom: 24px;
+}
+
+.quote-block {
+  margin: 0px 70px;
+}
+
+.quote-disc {
+  font-family: 'Gentium Book Basic';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 45px;
+  color: #dde0df;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.quote-disc::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 26px;
+  color: #f2f4f4
+}
+
+.quote__author {
+  display: block;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  line-height: 45px;
+  font-style: normal;
+  color: #ffffff;
+  text-align: center;
+}

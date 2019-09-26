@@ -459,3 +459,91 @@ template {
 
 /* Mixin for Heading 2 site LAMBDA
 use margin-bottom with header-two... mixins */
+
+/* Add
+background: url(...) no-repeat;
+background-size: 100% auto contain;
+before using this selector 
+Use @extend */
+
+.reviews,
+.quote {
+  margin: 0px auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.reviews {
+  max-width: 1600px;
+  background: url(/images/deco-image/reviews-background.jpg) no-repeat;
+  background-size: cover;
+}
+
+.container-reviews {
+  max-width: 1250px;
+  margin: 0px auto;
+  padding: 100px 40px 102px;
+}
+
+.quote {
+  max-width: 770px;
+  margin: 0px auto;
+  padding: 60px 0px 94px;
+  background: url(/images/deco-image/reviews-text-background.png) no-repeat;
+  background-size: 1cover;
+}
+
+.quote-title {
+  font-family: "Yeseva One", display;
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 80px;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.quote-title::after {
+  content: "";
+  display: block;
+  margin: 0px auto;
+  width: 250px;
+  height: 26px;
+}
+
+.quote-title::after {
+  background: url(../images/deco-image/reviews-title-decoration.png) no-repeat 50% 50%;
+}
+
+.quote-block {
+  margin: 0px 70px;
+}
+
+.quote-disc {
+  font-family: 'Gentium Book Basic';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 45px;
+  color: #dde0df;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.quote-disc::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 26px;
+  color: #f2f4f4;
+}
+
+.quote__author {
+  display: block;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  line-height: 45px;
+  font-style: normal;
+  color: #ffffff;
+  text-align: center;
+}
