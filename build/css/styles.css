@@ -555,3 +555,20 @@ Use @extend %selector-name*/
   color: #ffffff;
   text-align: center;
 }
+
+/* Mixin for Heading 2 site LAMBDA
+use margin-bottom with header-two... mixins */
+
+/* Adaptive background:
+Add
+background-image: url(...);
+before using this selector
+Use @extend %selector-name*/
+
+.reviews,
+.quote {
+  margin: 0px auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
