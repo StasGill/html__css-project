@@ -493,7 +493,7 @@ Use @extend %selector-name*/
 .content-block {
   max-width: 1250px;
   margin: 0px auto;
-  padding: 100px 40px 102px;
+  padding: 100px 0px 102px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -505,8 +505,12 @@ Use @extend %selector-name*/
   justify-content: space-between;
 }
 
+.content-block .img-block {
+  margin: 0px auto;
+}
+
 .food {
-  display: inline-block;
+  display: block;
 }
 
 .reserve-now {
@@ -620,7 +624,7 @@ Use @extend %selector-name*/
 .container-reviews {
   max-width: 1250px;
   margin: 0px auto;
-  padding: 100px 40px 102px;
+  padding: 100px 0px 102px;
 }
 
 .quote {
