@@ -30,9 +30,59 @@
   max-width: 430px;
 }
 
+.motivation {
+  margin-bottom: 44px;
+}
+
 .reserve-title {
   @include header-two;
   line-height: 80px;
   @include header-two-orange-decor;
   margin-bottom: 24px;
+}
+
+.motivation__disc {
+  font-size: 16px;
+  line-height: 24px;
+  color: #4c4c4c;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: center;
+}
+
+.motivation .motivation__disc:nth-child(2) {
+  margin-bottom: 18px;
+}
+
+.reserve-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 0px;
+}
+
+.visitor {
+  width: 200px;
+  height: 36px;
+  margin-bottom: 30px;
+  border: none;
+  font-size: 16px;
+  color: #7c7c7c;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 36px;
+  padding-left: 14px;
+  resize: none;
+}
+
+.what {
+  width: 200px;
+  height: 36px;
+}
+
+.reserve-button {
+  width: 200px;
+  height: 36px;
 }
