@@ -548,7 +548,7 @@ Use @extend %selector-name*/
   font-size: 16px;
   line-height: 24px;
   color: #4c4c4c;
-  font-family: "Lato";
+  font-family: 'Lato';
   font-weight: 400;
   text-align: center;
 }
@@ -577,7 +577,7 @@ Use @extend %selector-name*/
   margin-bottom: 26px;
 }
 
-.form__input .input__element:nth-last-child(-n+2) {
+.form__input .input__element:nth-last-child(-n + 2) {
   margin-bottom: 0px;
 }
 
@@ -585,9 +585,14 @@ Use @extend %selector-name*/
   font-size: 14px;
   line-height: 1.2;
   color: #c9a131;
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-weight: 700;
   margin-bottom: 6px;
+}
+
+.input__element label:hover,
+.input__element label:focus {
+  cursor: pointer;
 }
 
 .form__element {
@@ -596,7 +601,7 @@ Use @extend %selector-name*/
   border: none;
   font-size: 16px;
   color: #7c7c7c;
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-weight: 400;
   font-style: italic;
   font-size: 14px;
@@ -621,7 +626,7 @@ Use @extend %selector-name*/
   border: 1px solid #c89f2d;
   font-size: 16px;
   color: #ffffff;
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-weight: 400;
   text-align: center;
 }
@@ -634,37 +639,48 @@ Use @extend %selector-name*/
   cursor: pointer;
 }
 
-.reserve-button ::-webkit-datetime-edit {
-  padding: 1em;
-}
-
-.reserve-button ::-webkit-datetime-edit-fields-wrapper {
-  background: silver;
-}
-
-.reserve-button ::-webkit-datetime-edit-text {
-  color: red;
-  padding: 0 0.3em;
-}
-
-.reserve-button ::-webkit-datetime-edit-month-field {
-  color: blue;
-}
-
-.reserve-button ::-webkit-datetime-edit-day-field {
-  color: green;
-}
-
-.reserve-button ::-webkit-datetime-edit-year-field {
-  color: purple;
-}
-
-.reserve-button ::-webkit-inner-spin-button {
+.form__element--date::-webkit-inner-spin-button,
+.form__element--date::-webkit-clear-button {
+  -webkit-appearance: none;
   display: none;
 }
 
-.reserve-button ::-webkit-calendar-picker-indicator {
-  background: url(/images/deco-image/picker-indicator.png);
+.form__element--date[type='date']:before {
+  content: attr(placeholder) !important;
+}
+
+/* .form__element--date[type='date']:before {
+  content
+}
+
+.form__element--date[type='date']:valid:before {
+  content: '';
+}
+ */
+
+.form__element--date[type='date']:focus:before {
+  content: '' !important;
+}
+
+/* .form__element--date::-webkit-input-placeholder {
+  opacity: 1;
+} */
+
+.form__element--date[type='date']::-webkit-datetime-edit {
+  content: '';
+}
+
+/* .form__element--date[type='date']:valid::-webkit-datetime-edit {
+  visibility: visible;
+}
+ */
+
+::-webkit-calendar-picker-indicator {
+  display: block;
+  background: url(/images/deco-image/picker-indicator.png) no-repeat 50% 50%;
+  margin-right: 10px;
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
 }
 
 /* Mixin for Heading 2 site LAMBDA
