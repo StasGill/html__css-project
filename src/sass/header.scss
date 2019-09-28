@@ -1,0 +1,264 @@
+.header {
+  background-image: url(../images/deco-image/header-background.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 142px;
+}
+
+.wrapper {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+.header-logo {
+  display: flex;
+  width: 156px;
+  height: 92px;
+}
+.header-logo:hover img{
+  -webkit-transform: scale(1.01);
+	transform: scale(1.01);
+}
+
+.burger {
+  display: none;
+  width: 80px;
+  height: 80px;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+.menu__items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: 'Gentium Book Basic';
+  font-weight: bold;
+  list-style: none;
+  font-size: 21px;
+  color: white;
+  width: 714px;
+
+}
+
+.socials__items {
+  display: flex;
+  justify-content: space-between;
+  width: 82px;
+  list-style: none;
+  margin-left: 20px;
+
+}
+.header svg {
+  width: 20px;
+  height: 20px;
+  fill: #dab33e;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu a:hover  {
+  // color: #008f3b;
+  // transform: translatex(100%);
+  // transition: .2s ease-in-out;
+
+  border-bottom: white 2px solid;
+}
+
+
+.menu__link {
+  color: white;
+  text-decoration: none;
+}
+
+.tittle {
+  position: relative;
+  text-align: center;
+}
+
+.header h1 {
+  display: block;
+  font-family: 'Yeseva One';
+  color: white;
+  font-size: 90px;
+  text-align: center;
+  margin: 0 auto 34px auto;
+  padding: 0;
+  width: 1000px;
+}
+
+.header h1::after {
+  width: 235px;
+  height: 45px;
+  background-image: url(../images/divaider.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  content: "";
+  margin: 0 auto;
+  margin-top: 32px;
+}
+
+.tittle-button {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 490px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.header button {
+  color: white;
+  font-family: 'Lato';
+  font-size: 18px;
+  width: 230px;
+  height: 60px;
+  border-style: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  background-color: rgba(255, 255, 255, .2);
+  margin-right: 28px;
+  cursor: pointer;
+
+}
+
+.header button:nth-of-type(2n) {
+  margin-right: 0;
+}
+
+
+
+.header button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 1023px) {
+  .nav {
+    display: block;
+    max-width: 620px;
+    margin: 0 auto 50px auto;
+  }
+
+  .menu__items {
+    padding-top: 10px;
+  }
+
+  .header-logo {
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+
+  .header h1 {
+    font-size: 60px;
+    width: 700px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding-bottom: 100px;
+  }
+  .header-menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    width: 240px;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+    transform: translateX(230%);
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, .2);
+    font-size: 30px;
+  }
+  .nav {
+    margin-bottom: 70px;
+  }
+  .tittle {
+    height: 350px;
+  }
+
+
+  .header-menu:hover {
+    transform: translateX(160%);
+    transition: .4s ease-in-out;
+  }
+
+  .burger {
+    display: block;
+    padding-top: 15px;
+  }
+
+  .menu__items {
+    text-align: center;
+    width: 100%;
+    height: 80%;
+    flex-direction: column;
+  }
+
+  .menu__items li {
+    padding-top: 20px;
+  }
+
+  .socials__items {
+    width: 200px;
+    height: 20%;
+    padding-top: 30px;
+    justify-content: space-between;
+  }
+
+  .header h1 {
+    font-size: 33px;
+    width: 300px;
+    margin: 0 auto 30px auto;
+  }
+
+  .tittle {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .header-logo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .tittle-button {
+    width: 229px;
+  }
+  .tittle-button button:nth-of-type(2n){
+    margin-bottom: 0;
+  }
+
+  .tittle-button button {
+    margin: 0 0 10px 0;
+  }
+}
+
+
