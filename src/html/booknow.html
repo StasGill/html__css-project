@@ -11,7 +11,7 @@
       <img
         src="../images/content-image/booknow-plate-with-chery.jpg"
         alt="Plate with cake"
-        class="food"
+        class="food displey-none"
         width="270"
         height="507"
       />
@@ -30,45 +30,60 @@
           baked food.
         </p>
       </article>
-      <form action="" class="reserve-form">
+      <form action="#" class="reserve-form" id="reservation form">
         <div class="form__input">
           <div class="input__element">
             <label class for="name">Name</label>
             <textarea
               name="user-name"
               id="name"
-              cols="1"
-              rows="1"
+              wrap="off"
               placeholder="your name *"
               required
-              class="form__element visitor--name"
-            ></textarea>
+              class="form__element"
+              form="reservation form"
+              ></textarea>
           </div>
           <div class="input__element">
             <label for="email">Email</label>
             <textarea
               name="user-email"
               id="email"
-              cols="1"
-              rows="1"
+              wrap="off"
               placeholder="your email *"
               required
-              class="form__element visitor--email"
-            ></textarea>
+              class="form__element"
+              form="reservation form"
+              ></textarea>
           </div>
-          <div class="input__element input__element--date">
+          <div class="input__element">
             <label for="date">Date</label>
             <input
-              type="date"
+              type="text"
+              onfocus="(this.type='date')"
               id="date"
               name=""
               class="form__element form__element--date"
               placeholder="date *"
+              required
+              form="reservation form"
             />
           </div>
           <div class="input__element">
             <label for="party">Party number</label>
-            <input type="text" id="party" class="form__element what" />
+            <select 
+            name="parties"
+            id="party"
+            form="reservation form"
+            class="form__element form__element--party">
+              <option value="" selected>party number</option>
+              <option value="">Meet lovers</option>
+              <option value="">Jemma birthday</option>
+              <option value="">Khrenovukhu day</option>
+              <option value="">Fried chicken</option>
+              <option value="">Strawberry...</option>
+              <option value="">B-52</option>
+            </select>
           </div>
         </div>
         <button class="reserve-button">Book now!</button>

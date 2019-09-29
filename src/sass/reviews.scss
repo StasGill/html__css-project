@@ -1,22 +1,21 @@
-@import './header-mix';
 @import './pattern-selectors';
-@import './container-mix';
+@import './mixins';
 
 .reviews {
-  max-width: 1600px;
+  @include full-container;
   background-image: url(/images/deco-image/reviews-background.jpg);
   @extend %section-background;
 }
 
 .container-reviews {
   @include main-container;
-  padding: 100px 0px 102px;
+  padding: 100px 0px;
 }
 
 .quote {
   max-width: 770px;
-  margin: 0px auto;
-  padding: 56px 0px 94px;
+  @include horizontal-block-center(auto);
+  padding: 56px 0px 92px;
   background-image: url(/images/deco-image/reviews-text-background.png);
   @extend %section-background;
 }
@@ -24,37 +23,35 @@
 .quote-title {
   @include header-two;
   @include header-two-white-decor;
-  margin-bottom: 24px;
+  margin-bottom: 28px;  
 }
 
 .quote-block {
-  margin: 0px 70px;
+  @include horizontal-block-center(70px);
+  position: relative;
 }
 
 .quote-disc {
-  font-family: 'Gentium Book Basic', latin;
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 45px;
+  @include font-set ('Gentium Book Basic', sans-serif, normal, 25px, 700, 44px, center);
   color: #dde0df;
-  text-align: center;
   margin-bottom: 28px;
 }
 
-.quote-disc::before {
+.quote-block::before {
+  position: absolute;
+  top: -12px;
+  left: -40px;
   content: "";
   display: block;
   width: 32px;
   height: 26px;
-  color: #f2f4f4
+  background-size: 32px 26px;
+  background-color: #f2f4f4;
+  background-position: -32px -26px;
 }
 
 .quote__author {
   display: block;
-  font-family: 'Lato', sans-serif;
-  font-size: 18px;
-  line-height: 45px;
-  font-style: normal;
+  @include font-set('Lato', sans-serif, normal, 18px, 400, 45px, center);
   color: #ffffff;
-  text-align: center;
 }

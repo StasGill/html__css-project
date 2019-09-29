@@ -3,9 +3,10 @@ Add
 background-image: url(...);
 before using this selector
 Use @extend %selector-name*/
+@import './mixins';
 
 %section-background {
-  margin: 0px auto;
+  @include horizontal-block-center(auto);
   background: {
     repeat: no-repeat;
     position: center center;
