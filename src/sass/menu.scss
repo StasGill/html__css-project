@@ -12,7 +12,6 @@
   flex-wrap: wrap;
   padding: 100px 110px;
   justify-content: space-between;
-<<<<<<< HEAD
 }
 
 .menu__columm1 {
@@ -25,9 +24,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 430px;
-=======
   padding: 110px 100px;
->>>>>>> 8cf84db66a286fa5fd9ef4d27195fa3f94853619
 }
 
 .menu__item {
@@ -41,7 +38,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    content: "Special";
+    content: 'Special';
     color: #ffffff;
     width: 70px;
     height: 22px;
@@ -139,10 +136,10 @@
     margin: 0 auto;
     width: 430px;
   }
-  
+
   .container__menu {
     padding: 50px;
-    margin: 0 auto; 
+    margin: 0 auto;
   }
 }
 
@@ -180,7 +177,7 @@
 @media (max-width: 500px) {
   .menu__columm1 {
     width: 300px;
-    margin: 0 auto
+    margin: 0 auto;
   }
 
   .menu__columm2 {
