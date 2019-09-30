@@ -1459,7 +1459,7 @@ design of form blocks */
   }
 
   .container__menu {
-    padding: 10px;
+    padding: 50px 10px;
     margin: 0 auto;
   }
 }
@@ -1730,7 +1730,6 @@ design of form blocks */
   }
 
   .container__menu {
-    padding: 0;
     margin: 0 auto;
   }
 }
