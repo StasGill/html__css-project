@@ -899,6 +899,22 @@ design of form blocks */
   background-size: cover;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* Mixins for 
 for site content location blocks */
 
@@ -1135,6 +1151,22 @@ design of form blocks */
   background-size: cover;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* Mixins for 
 for site content location blocks */
 
@@ -1160,7 +1192,7 @@ design of form blocks */
 .container-reviews {
   max-width: 1250px;
   margin: 0px auto;
-  padding: 100px 0px;
+  padding: 100px 0px 99px;
 }
 
 .quote {
@@ -1356,6 +1388,22 @@ design of form blocks */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Mixins for 

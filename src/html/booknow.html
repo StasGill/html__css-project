@@ -30,18 +30,17 @@
           baked food.
         </p>
       </article>
-      <form action="#" class="reserve-form" id="reservation form">
+      <form action="#" class="reserve-form" name="reservation-form">
         <div class="form__input">
           <div class="input__element">
             <label class for="name">Name</label>
             <textarea
               name="user-name"
               id="name"
-              wrap="off"
               placeholder="your name *"
               required
               class="form__element"
-              form="reservation form"
+              form="reservation-form"
               ></textarea>
           </div>
           <div class="input__element">
@@ -49,11 +48,10 @@
             <textarea
               name="user-email"
               id="email"
-              wrap="off"
               placeholder="your email *"
               required
               class="form__element"
-              form="reservation form"
+              form="reservation-form"
               ></textarea>
           </div>
           <div class="input__element">
@@ -62,11 +60,11 @@
               type="text"
               onfocus="(this.type='date')"
               id="date"
-              name=""
+              name="input-date"
               class="form__element form__element--date"
               placeholder="date *"
               required
-              form="reservation form"
+              form="reservation-form"
             />
           </div>
           <div class="input__element">
@@ -74,7 +72,7 @@
             <select
             name="parties"
             id="party"
-            form="reservation form"
+            form="reservation-form"
             class="form__element form__element--party">
               <option value="" selected>party number</option>
               <option value="">Meet lovers</option>
