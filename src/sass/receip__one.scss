@@ -10,8 +10,7 @@
 .container__one {
   height: auto;
   max-width: 1210px;
-  padding: 55px 0;
-  padding-left: 110px;
+  padding: 55px 0 55px 110px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -79,7 +78,7 @@
 @media (max-width: 1200px) {
   .container__one {
     max-width: 1200px;
-    padding: 20px 0;
+    padding: 55px 0;
     margin: 0 auto;
   }
 
@@ -98,7 +97,7 @@
 @media (max-width: 1024px) {
   .container__one {
     max-width: 1024px;
-    padding: 20px 0;
+    padding: 55px 0;
     padding-left: 0;
     margin: 0 auto;
   }
@@ -117,7 +116,7 @@
 @media (max-width: 768px) {
   .container__one {
     max-width: 768px;
-    padding: 20px 0;
+    padding: 55px 0;
     margin: 0 auto;
   }
 
@@ -150,7 +149,7 @@
 @media (max-width: 480px) {
   .container__one {
     max-width: 310px;
-    padding: 50px 0 50px 0;
+    padding: 20px 0 20px 0;
     margin: 0 auto;
   }
 
@@ -169,6 +168,6 @@
     width: 300px;
   }
   .receip__one_img1 {
-    margin-left: 0;
+    margin-left: 50px;
   }
 }
