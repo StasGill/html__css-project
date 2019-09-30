@@ -4,7 +4,7 @@
 
 .reserve {
   @include full-container;
-  background-image: url(/images/deco-image/reserve-background.png);
+  background-image: url(../images/deco-image/reserve-background.png);
   @extend %section-background;
 }
 

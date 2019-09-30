@@ -3,7 +3,7 @@
 
 .reviews {
   @include full-container;
-  background-image: url(/images/deco-image/reviews-background.jpg);
+  background-image: url(../images/deco-image/reviews-background.jpg);
   @extend %section-background;
 }
 
@@ -16,7 +16,7 @@
   max-width: 770px;
   @include horizontal-block-center(auto);
   padding: 56px 0px 92px;
-  background-image: url(/images/deco-image/reviews-text-background.png);
+  background-image: url(../images/deco-image/reviews-text-background.png);
   @extend %section-background;
 }
 

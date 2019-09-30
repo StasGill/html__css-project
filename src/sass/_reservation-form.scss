@@ -75,12 +75,12 @@ $forange: #c89f2d !global;
 
 .form__element--date::-webkit-input-placeholder {
   display: block;
-  background: url(/images/deco-image/picker-indicator.png) no-repeat 92.5% 40%;
+  background: url(../images/deco-image/picker-indicator.png) no-repeat 92.5% 40%;
 }
 
 .form__element--date::-webkit-calendar-picker-indicator {
   display: block;
-  background: url(/images/deco-image/picker-indicator.png) no-repeat 50% 50%;
+  background: url(../images/deco-image/picker-indicator.png) no-repeat 50% 50%;
   margin-right: 10px;
   color: rgba(0, 0, 0, 0);
   opacity: 1;
@@ -88,7 +88,7 @@ $forange: #c89f2d !global;
 
 .form__element--party {
   -webkit-appearance: none;
-  background-image: url(/images/deco-image/party-icon.png);
+  background-image: url(../images/deco-image/party-icon.png);
   background-repeat: no-repeat;
   background-position: 94% 50%;
   -webkit-appearance: none;
