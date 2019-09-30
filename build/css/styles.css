@@ -1131,7 +1131,6 @@ use margin-bottom with header-two... mixins */
 @media (max-width: 1200px) {
   .container__one {
     max-width: 1200px;
-    padding: 20px 0;
     margin: 0 auto;
   }
 
