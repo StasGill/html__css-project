@@ -1,0 +1,47 @@
+@import './pattern-selectors';
+@import './mixins';
+@import './reservation-form';
+
+.reserve {
+  @include full-container;
+  background-image: url(/images/deco-image/reserve-background.png);
+  @extend %section-background;
+}
+
+.content-block {
+  @include main-container;
+  @include between;
+  padding: 100px 110px 102px 40px;
+}
+
+.img-block {
+  width: 570px;
+  @include between;
+}
+
+.food {
+  display: block;
+}
+
+.reserve-now {
+  max-width: 430px;
+}
+
+.motivation {
+  margin-bottom: 30px;
+}
+
+.reserve-title {
+  @include header-two;
+  @include header-two-orange-decor;
+  margin-bottom: 20px;
+}
+
+.motivation__disc {
+  @include font-set ('Lato',sans-serif, normal, 16px, 400, 24px, center);
+  color: #4c4c4c;
+}
+
+.motivation .motivation__disc:nth-child(2) {
+  margin-bottom: 14px;
+}

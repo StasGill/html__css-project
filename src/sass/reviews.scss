@@ -1,0 +1,60 @@
+@import './pattern-selectors';
+@import './mixins';
+
+.reviews {
+  @include full-container;
+  background-image: url(/images/deco-image/reviews-background.jpg);
+  @extend %section-background;
+}
+
+.container-reviews {
+  @include main-container;
+  padding: 100px 0px;
+}
+
+.quote {
+  max-width: 770px;
+  @include horizontal-block-center(auto);
+  padding: 56px 0px 92px;
+  background-image: url(/images/deco-image/reviews-text-background.png);
+  @extend %section-background;
+}
+
+.quote-title {
+  @include header-two;
+  @include header-two-white-decor;
+  margin-bottom: 28px;
+}
+
+.quote-block {
+  @include horizontal-block-center(70px);
+  position: relative;
+}
+
+.quote-disc {
+  @include font-set(
+    'Gentium Book Basic',
+    sans-serif,
+    normal,
+    25px,
+    700,
+    44px,
+    center
+  );
+  color: #dde0df;
+  margin-bottom: 28px;
+}
+
+.quote-simbol {
+  position: absolute;
+  top: -3px;
+  left: -40px;
+  fill: #f2f4f4;
+  opacity: 0.5;
+}
+
+.quote__author {
+  display: block;
+  @include font-set('Lato', sans-serif, normal, 18px, 400, 45px, center);
+  color: #ffffff;
+}

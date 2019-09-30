@@ -1,0 +1,103 @@
+@media (max-width: 1199px) {
+  .img-block {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 1149px) {
+  .content-block {
+    padding-right: 40px;
+    justify-content: center;
+  }
+
+  .img-block {
+    max-width: 550px;
+  }
+}
+
+@media (max-width: 1089px) {
+  .container-reviews,
+  .content-block {
+    padding: 30px 5px;
+  }
+}
+
+@media (max-width: 979px) {
+  .content-block {
+    flex-wrap: wrap;
+  }
+
+  .img-block {
+    width: 540px;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 794px) {
+  .container-reviews,
+  .content-block {
+    padding: 10px 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container-reviews {
+    padding: 0px;
+  }
+
+  .quote {
+    padding: 10px 0px;
+  }
+
+  .img-block {
+    display: none;
+  }
+}
+
+@media (max-width: 543px) {
+  .quote-block {
+    margin: 0px auto;
+  }
+
+  .quote-title,
+  .reserve-title {
+    font-size: 24px;
+  }
+
+  .quote-title:after,
+  .reserve-title:after {
+    width: 180px;
+    margin-top: 0px;
+  }
+
+  .quote-disc {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+
+  .quote__author {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .motivation__disc {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 415px) {
+  .form__input {
+    justify-content: center;
+  }
+
+  .input__element {
+    margin-bottom: 10px;
+  }
+  
+  .form__input .input__element:nth-last-child(-n + 2) {
+    margin-bottom: 10px;
+  }
+}
