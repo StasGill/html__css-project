@@ -1156,6 +1156,9 @@ footer {
   margin: 0 auto;
 }
 
+/* Mixin for Heading 2 site LAMBDA
+use margin-bottom with header-two... mixins */
+
 @media (max-width: 1161px) {
   .booknow__image {
     display: none;
