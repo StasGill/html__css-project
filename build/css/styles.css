@@ -811,17 +811,12 @@ design of form blocks */
   margin-bottom: 28px;
 }
 
-.quote-block::before {
+.quote-simbol {
   position: absolute;
-  top: -12px;
+  top: -3px;
   left: -40px;
-  content: "";
-  display: block;
-  width: 32px;
-  height: 26px;
-  background-size: 32px 26px;
-  background-color: #f2f4f4;
-  background-position: -32px -26px;
+  fill: #f2f4f4;
+  opacity: 0.5;
 }
 
 .quote__author {
