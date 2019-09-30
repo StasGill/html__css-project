@@ -1,23 +1,69 @@
 .menu__list {
   background-image: url(../images/deco-image/about-pattern.png);
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  max-width: 100%;
+  width: 100%;
 }
 
 .container__menu {
-  max-width: 1030px;
-  height: 794px;
+  max-width: 1250px;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
+  padding: 100px 110px;
   justify-content: space-between;
-  padding: 110px 100px;
 }
+
+.menu__columm1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 430px;
+}
+
+.menu__columm2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 430px;
+}
+
 
 .menu__item {
   list-style: none;
+  border: 1px solid transparent;
+  margin-bottom: 32px;
+  padding: 10px;
+  position: relative;
+
+  &::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: "Special";
+    color: #ffffff;
+    width: 70px;
+    height: 22px;
+    background-color: #d5b764;
+    position: absolute;
+    right: 0;
+    top: -22px;
+    opacity: 0;
+  }
+
+  .menu__itemss {
+    width: 430px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
+.menu__row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
 
 .menu__title {
   font-size: 36px;
@@ -25,7 +71,7 @@
   font-family: 'Yeseva One', display;
   color: #c89f2d;
   text-align: center;
-  margin-bottom: 26px;
+  margin-bottom: 28px;
 }
 
 .menu__title::after {
@@ -34,43 +80,25 @@
   background-position: center;
   background-image: url(../images/deco-image/about-title-decoration.png);
   display: block;
-  width: 274px;
   height: 24px;
   margin: 0 auto;
   margin-top: 12px;
 }
 
-.menu__row {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.menu__row::after {
-  content: '';
-  margin-bottom: 10px;
-  border-bottom: 1px solid #c89f2d;
-}
-// при ховере на ли будет бифор абсолютный псевдоэлемент
 .menu__product {
   font-size: 21px;
   line-height: 24px;
   font-family: 'Yeseva One', display;
   color: #c89f2d;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin: 0;
 }
 
 .menu__price {
   font-size: 21px;
   line-height: 24px;
+  width: 70px;
+  text-align: center;
   font-family: 'Yeseva One', display;
   color: #c89f2d;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
 }
 
 .menu__desc {
@@ -78,13 +106,87 @@
   line-height: 24px;
   font-family: 'Lato', sans-serif;
   color: #4c4c4c;
+  border-top: 1px solid #e3dcbd;
+  padding-top: 10px;
 }
 
 .menu__appetisers {
-  margin-bottom: 65px;
+  margin-bottom: 61px;
 }
 
 .menu__starters {
-  margin-bottom: 65px;
+  margin-bottom: 61px;
 }
 
+.menu__item:hover {
+  border: 1px solid #e3dcbd;
+}
+
+.menu__item:hover::before {
+  opacity: 1;
+}
+
+@media (max-width: 1200px) {
+  .menu__columm1 {
+    margin: 0 auto;
+    width: 430px;
+  }
+
+  .menu__columm2 {
+    margin: 0 auto;
+    width: 430px;
+  }
+
+  .container__menu {
+    padding: 50px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .menu__columm1 {
+    margin: 0 auto;
+    width: 430px;
+  }
+
+  .menu__columm2 {
+    margin: 0 auto;
+    width: 430px;
+  }
+
+  .container__menu {
+    padding: 10px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 780px) {
+  .menu__columm1 {
+    margin: 0 auto;
+  }
+
+  .menu__appetisers {
+    margin-bottom: 0;
+  }
+
+  .menu__starters {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .menu__columm1 {
+    width: 300px;
+    margin: 0 auto
+  }
+
+  .menu__columm2 {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .container__menu {
+    padding: 0;
+    margin: 0 auto;
+  }
+}
