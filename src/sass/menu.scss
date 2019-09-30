@@ -1,0 +1,90 @@
+.menu__list {
+  background-image: url(../images/deco-image/about-pattern.png);
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+}
+
+.container__menu {
+  max-width: 1030px;
+  height: 794px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 110px 100px;
+}
+
+.menu__item {
+  list-style: none;
+}
+
+
+.menu__title {
+  font-size: 36px;
+  line-height: 43px;
+  font-family: 'Yeseva One', display;
+  color: #c89f2d;
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.menu__title::after {
+  content: '';
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/deco-image/about-title-decoration.png);
+  display: block;
+  width: 274px;
+  height: 24px;
+  margin: 0 auto;
+  margin-top: 12px;
+}
+
+.menu__row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.menu__row::after {
+  content: '';
+  margin-bottom: 10px;
+  border-bottom: 1px solid #c89f2d;
+}
+// при ховере на ли будет бифор абсолютный псевдоэлемент
+.menu__product {
+  font-size: 21px;
+  line-height: 24px;
+  font-family: 'Yeseva One', display;
+  color: #c89f2d;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+.menu__price {
+  font-size: 21px;
+  line-height: 24px;
+  font-family: 'Yeseva One', display;
+  color: #c89f2d;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.menu__desc {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Lato', sans-serif;
+  color: #4c4c4c;
+}
+
+.menu__appetisers {
+  margin-bottom: 65px;
+}
+
+.menu__starters {
+  margin-bottom: 65px;
+}
+

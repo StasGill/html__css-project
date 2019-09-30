@@ -606,6 +606,236 @@ template {
   border: 2px solid rgba(0, 0, 0, 0.2);
 }
 
+.receip__one {
+  max-width: 100%;
+  background-image: url(../images/deco-image/about-pattern.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.container__one {
+  height: auto;
+  max-width: 1210px;
+  padding: 55px 0;
+  padding-left: 110px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.receip__one__columm {
+  display: flex;
+  flex-direction: column;
+  max-width: 430px;
+  padding: 45px 0;
+}
+
+.receip__one__title {
+  font-size: 36px;
+  line-height: 43px;
+  font-family: 'Yeseva One', display;
+  color: #cc9900;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.receip__one__title::after {
+  content: '';
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/deco-image/about-title-decoration.png);
+  display: block;
+  max-width: 274px;
+  height: 24px;
+  margin: 0 auto;
+  margin-top: 14px;
+}
+
+.receip__one__text {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Lato', sans-serif;
+  color: #4c4c4c;
+  text-align: center;
+  padding: 0 8px;
+  margin-bottom: 55px;
+}
+
+.receip__one_img1 {
+  max-width: 219px;
+  height: 221px;
+  display: block;
+  margin-left: 130px;
+}
+
+.receip__one__image {
+  display: flex;
+  max-width: 670px;
+  height: auto;
+}
+
+.receip__one__img2 {
+  max-width: 621px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.receip__two {
+  background-image: url(../images/receip-two-image/receip_two_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: center center;
+  margin: 0 auto;
+}
+
+.container__two {
+  display: flex;
+  justify-content: flex-end;
+  padding: 100px 40px 100px 0;
+}
+
+.receip__two__content {
+  flex-direction: column;
+  max-width: 570px;
+  background-color: rgba(0, 0, 0, 0.67);
+  padding: 72px 80px;
+}
+
+.receip__two__title {
+  font-size: 36px;
+  line-height: 43px;
+  font-family: 'Yeseva One', display;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.receip__two__title::after {
+  content: '';
+  width: 248px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/receip-two-image/Decoration-title.png);
+  display: block;
+  margin: 0 auto;
+  margin-top: 14px;
+}
+
+.receip__two__text {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 60px;
+}
+
+.receip__two__images {
+  max-width: 392px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.receip__two__images img {
+  max-width: 110px;
+  height: auto;
+}
+
+.menu__list {
+  background-image: url(../images/deco-image/about-pattern.png);
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+}
+
+.container__menu {
+  max-width: 1030px;
+  height: 794px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 110px 100px;
+}
+
+.menu__item {
+  list-style: none;
+}
+
+.menu__title {
+  font-size: 36px;
+  line-height: 43px;
+  font-family: 'Yeseva One', display;
+  color: #c89f2d;
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.menu__title::after {
+  content: '';
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/deco-image/about-title-decoration.png);
+  display: block;
+  width: 274px;
+  height: 24px;
+  margin: 0 auto;
+  margin-top: 12px;
+}
+
+.menu__row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.menu__row::after {
+  content: '';
+  margin-bottom: 10px;
+  border-bottom: 1px solid #c89f2d;
+}
+
+.menu__product {
+  font-size: 21px;
+  line-height: 24px;
+  font-family: 'Yeseva One', display;
+  color: #c89f2d;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+.menu__price {
+  font-size: 21px;
+  line-height: 24px;
+  font-family: 'Yeseva One', display;
+  color: #c89f2d;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.menu__desc {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Lato', sans-serif;
+  color: #4c4c4c;
+}
+
+.menu__appetisers {
+  margin-bottom: 65px;
+}
+
+.menu__starters {
+  margin-bottom: 65px;
+}
+
 /* Adaptive background:
 Add
 background-image: url(...);
@@ -1110,6 +1340,24 @@ indoor units */
 /* Mixin sizes and
 design of form blocks */
 
+@media (max-width: 1200px) {
+  .container__one {
+    max-width: 1200px;
+    padding: 20px 0;
+    margin: 0 auto;
+  }
+
+  .receip__one__columm {
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .receip__one__image {
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 1199px) {
   .img-block {
     margin-right: 10px;
@@ -1131,6 +1379,25 @@ design of form blocks */
   .container-reviews,
   .content-block {
     padding: 30px 5px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container__one {
+    max-width: 1024px;
+    padding: 20px 0;
+    padding-left: 0;
+    margin: 0 auto;
+  }
+
+  .receip__one__columm {
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .receip__one__image {
+    padding: 0;
+    margin: 0 auto;
   }
 }
 
@@ -1187,6 +1454,19 @@ design of form blocks */
   .container-reviews,
   .content-block {
     padding: 10px 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container__one {
+    max-width: 768px;
+    padding: 20px 0;
+    margin: 0 auto;
+  }
+
+  .receip__one__image {
+    padding: 0;
+    margin: 0 auto;
   }
 }
 
@@ -1291,6 +1571,38 @@ design of form blocks */
   }
 }
 
+@media (max-width: 670px) {
+  .container__two {
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px;
+  }
+
+  .receip__two__content {
+    padding: 20px 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container__one {
+    max-width: 480px;
+    padding: 20px 0;
+    margin: 0 auto;
+  }
+
+  .receip__one__image {
+    max-width: 480px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .receip__one__img2 {
+    max-width: 480px;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 543px) {
   .quote-block {
     margin: 0px auto;
@@ -1321,6 +1633,48 @@ design of form blocks */
   .motivation__disc {
     font-size: 16px;
     line-height: 1.2;
+  }
+}
+
+@media (max-width: 480px) {
+  .container__one {
+    max-width: 310px;
+    padding: 20px 0;
+    margin: 0 auto;
+  }
+
+  .receip__one__image {
+    max-width: 320px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .receip__one__img2 {
+    max-width: 310px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .container__two__content {
+    width: 320px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .container__two {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .receip__two__images {
+    width: 300px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .receip__two__images img {
+    width: 90px;
+    height: auto;
   }
 }
 
