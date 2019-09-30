@@ -1,0 +1,35 @@
+/* Mixin for Heading 2 site LAMBDA
+use margin-bottom with header-two... mixins */
+
+@mixin header-two {
+  font: {
+    family: "Yeseva One", display;
+    size: 36px;
+    weight: 400;
+  }
+  text-align: center;
+
+  &::after {
+    content: "";
+    display: block;
+    margin: 0px auto;
+    width: 250px;
+    height: 26px;
+  }
+}
+
+@mixin header-two-orange-decor {
+  color: #cc9900;
+
+  &::after {
+    background: url(../images/deco-image/about-title-decoration.png) no-repeat 50% 50%;
+  }
+}
+
+@mixin header-two-white-decor {
+  color: #ffffff;
+
+  &::after {
+    background: url(../images/deco-image/reviews-title-decoration.png) no-repeat 50% 50%;
+  }
+}

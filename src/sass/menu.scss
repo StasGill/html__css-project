@@ -1,7 +1,5 @@
 .menu__list {
   background-image: url(../images/deco-image/about-pattern.png);
-  // background-size: cover;
-  // background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -9,7 +7,6 @@
 
 .container__menu {
   max-width: 1250px;
-  // width: 100%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -24,19 +21,19 @@
 }
 
 .menu__appetisers {
-  width: 430px;
+  // width: 430px;
 }
 
 .menu__salads {
-  width: 430px;
+  // width: 430px;
 }
 
 .menu__starters {
-  width: 430px;
+  // width: 430px;
 }
 
 .menu__dishes {
-  width: 430px;
+  // width: 430px;
 }
 
 .menu__columm2 {
@@ -46,8 +43,8 @@
 }
 
 .menu__columm1 h3 {
-  margin: 0 auto;
-  width: 200px;
+  // margin: 0 auto;
+  // // width: 200px;s
 }
 
 .menu__item {
@@ -70,6 +67,10 @@
     right: 0;
     top: -22px;
     opacity: 0;
+  }
+
+  .menu__itemss {
+    width: 430px;
   }
 
   &:last-of-type {
@@ -180,6 +181,10 @@
 }
 
 @media (max-width: 780px) {
+  .menu__columm1 {
+    margin: 0 auto;
+  }
+
   .menu__appetisers {
     margin-bottom: 0;
   }
