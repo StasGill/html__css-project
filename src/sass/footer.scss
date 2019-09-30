@@ -1,0 +1,114 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+    padding-right: 20px;
+  background-color: #191919;
+  width: 100%;
+}
+
+.ft {
+  position: relative;
+  }
+
+.wrapperr {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1250px;
+  margin: 0 auto;
+}
+
+.wrapperr h3 {
+  font-family: 'Yeseva One';
+  font-style: 21px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.wrapperr p {
+  font-family: 'Open Sans';
+  font-style: 16px;
+  line-height: 24px;
+
+}
+
+.about-us {
+  display: block;
+  max-width: 370px;
+  text-align: center;
+  color: white;
+}
+
+.opening-hours {
+  text-align: center;
+  width: 230px;
+  color: white;
+}
+.opening-hours p{
+  margin-bottom: 56px;
+}
+
+.our-location {
+  text-align: center;
+  width: 230px;
+  color: white;
+}
+.our-location p{
+  margin-bottom: 56px;
+}
+
+.footer-tittle::after {
+  width: 235px;
+  height: 45px;
+  background-image: url(../images/divaiderf.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  content: "";
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.socials__itemss {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+width: 140px;
+
+}
+
+.footer svg {
+  width: 25px;
+  height: 25px;
+  fill: white;
+}
+.footer.our-location svg {
+  width: 10px;
+  height: 10px;
+}
+
+.footer ul {
+  margin: 0 auto;
+}
+
+@media (max-width: 1023px) {
+  .footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .wrapperr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+  }
+  .ft {
+    margin-bottom: 30px;
+  }
+}

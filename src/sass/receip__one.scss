@@ -1,0 +1,107 @@
+#receip__one {
+  width: 100%;
+  background-image: url(../images/deco-image/about-pattern.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1250px;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  padding-left: 110px;
+}
+
+.receip__one__content {
+  display: flex;
+  }
+
+.receip__one__columm {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 430px;
+  padding-top: 50px;
+  }
+
+.receip__one__title {
+  font-size: 36px;
+  font-family: 'Yeseva One';
+  color: #cc9900;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.receip__one__title::after {
+  content: '';
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/deco-image/about-title-decoration.png);
+  display: block;
+  width: 274px;
+  height: 24px;
+  margin: 0 auto;
+  margin-top: 14px;
+}
+
+.receip__one__text {
+  font-size: 16px;
+  font-family: 'Lato';
+  line-height: 24px;
+  color: #4c4c4c;
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.receip__one_img1 {
+  width: 219px;
+  height: 221px;
+  display: block;
+  margin-left: 140px;
+}
+
+.receip__one__image {
+  width: 670px;
+  // height: 710px;
+  }
+
+.receip__one__img2 {
+  width: 621px;
+  height: 625px;
+  display: block;
+  margin: 0 auto;
+}
+@media (max-width: 1100px) {
+  .receip__one {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .receip__one__image {
+    display: none;
+  }
+  .receip__one__columm {
+    margin: 0 auto;
+  }
+  .receip__one__content {
+    padding: 0;
+  }
+  .container {
+    padding-left: 0;
+  }
+}
+@media (max-width: 460px) {
+  .receip__one__columm {
+    width: 300px;
+  }
+  .receip__one__title {
+    width: 100%;
+  }
+  .receip__one__text {
+    width: 100%;
+  }
+  .receip__one_img1{
+    margin-left: 70px;
+  }
+}
