@@ -58,7 +58,7 @@
     url('../fonts/lato-v16-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* gentium-book-basic-regular - latin, serif */  
+/* gentium-book-basic-regular - latin, serif */
 
 @font-face {
   font-family: 'Gentium Book Basic';
@@ -67,4 +67,14 @@
   src: local('Gentium Book Basic'), local('GentiumBookBasic'),
     url('../fonts/gentium-book-basic-v10-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
     url('../fonts/gentium-book-basic-v10-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* gentium-book-basic-700 - latin */
+@font-face {
+  font-family: 'Gentium Book Basic';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Gentium Book Basic Bold'), local('GentiumBookBasic-Bold'),
+    url('../fonts/gentium-book-basic-v10-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/gentium-book-basic-v10-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }

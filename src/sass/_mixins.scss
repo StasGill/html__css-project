@@ -1,0 +1,94 @@
+/* Mixins for 
+for site content location blocks */
+
+@mixin horizontal-block-center ($horizontal-margin) {
+  margin: 0px $horizontal-margin;
+}
+
+@mixin full-container {
+  max-width: 1600px;
+  @include horizontal-block-center(auto);
+  box-shadow: 0 0 50px #333;
+}
+
+@mixin main-container {
+  max-width: 1250px;
+  @include horizontal-block-center(auto);
+}
+
+/* Mixin 
+entering text parameters */
+
+@mixin font-set ($family, $uni, $style, $fsize, $fweight, $lheight, $align) {
+  font: {
+    family: $family, $uni;
+    style: $style;
+    size: $fsize;
+    weight: $fweight;
+  }
+  line-height: $lheight;
+  text-align: $align;
+}
+
+/* Mixins for Heading 2 site LAMBDA
+use margin-bottom with header-two... mixins */
+
+@mixin header-two {
+  @include font-set ('Yeseva One', display, normal, 36px, 400, 1.2, center);
+  
+  &::after {
+    content: "";
+    display: block;
+    margin: 20px auto 0px;
+    width: 250px;
+    height: 26px;
+  }
+}
+
+@mixin header-two-orange-decor {
+  color: #cc9900;
+
+  &::after {
+    background: url(../images/deco-image/about-title-decoration.png) no-repeat 50% 50%;
+  }
+}
+
+@mixin header-two-white-decor {
+  color: #ffffff;
+
+  &::after {
+    background: url(../images/deco-image/reviews-title-decoration.png) no-repeat 50% 50%;
+  }
+}
+
+/* Mixins for positioning
+indoor units */
+
+@mixin flex {
+  display: flex;
+}
+
+@mixin between {
+  @include flex;
+  justify-content: space-between;
+}
+
+@mixin wrap-between {
+  @include between;
+  flex-wrap: wrap;
+}
+
+/* Mixin sizes and
+design of form blocks */
+
+@mixin input-container {
+  width: 200px;
+  height: 36px;
+  @include font-set ('Open Sans', sans-serif, italic, 14px, 400, 34px, left);
+}
+
+@mixin input-border ($bcolor) {
+  border-width: 1px;
+  border-style: solid;
+  border-color: $bcolor;
+}

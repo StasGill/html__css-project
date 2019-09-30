@@ -14,6 +14,10 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  background-color: #c9c5c5;
+}
+
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -457,6 +461,7 @@ template {
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+<<<<<<< HEAD
 .header {
   background-image: url(../images/deco-image/header-background.jpg);
   background-position: center;
@@ -1250,10 +1255,459 @@ use margin-bottom with header-two... mixins */
   }
 
   .ft {
+=======
+/* gentium-book-basic-700 - latin */
+
+@font-face {
+  font-family: 'Gentium Book Basic';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Gentium Book Basic Bold"), local("GentiumBookBasic-Bold"), url("../fonts/gentium-book-basic-v10-latin-700.woff2") format("woff2"), url("../fonts/gentium-book-basic-v10-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* Adaptive background:
+Add
+background-image: url(...);
+before using this selector
+Use @extend %selector-name*/
+
+/* Mixins for 
+for site content location blocks */
+
+/* Mixin 
+entering text parameters */
+
+/* Mixins for Heading 2 site LAMBDA
+use margin-bottom with header-two... mixins */
+
+/* Mixins for positioning
+indoor units */
+
+/* Mixin sizes and
+design of form blocks */
+
+.reserve,
+.reviews,
+.quote {
+  margin: 0px auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+/* Mixins for 
+for site content location blocks */
+
+/* Mixin 
+entering text parameters */
+
+/* Mixins for Heading 2 site LAMBDA
+use margin-bottom with header-two... mixins */
+
+/* Mixins for positioning
+indoor units */
+
+/* Mixin sizes and
+design of form blocks */
+
+.reserve-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.form__input {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.input__element {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 26px;
+}
+
+.form__input .input__element:nth-last-child(-n + 2) {
+  margin-bottom: 0px;
+}
+
+.input__element label {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: left;
+  color: #c9a131;
+  margin-bottom: 6px;
+}
+
+.input__element label:hover {
+  cursor: pointer;
+}
+
+.form__element {
+  width: 200px;
+  height: 36px;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 34px;
+  text-align: left;
+  color: #7c7c7c;
+  resize: none;
+  padding-left: 14px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-width: 1px;
+  border-style: solid;
+  border-color: #c8c6c6;
+}
+
+.form__element:focus {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #c89f2d;
+  outline: none;
+}
+
+.reserve-button {
+  width: 200px;
+  height: 36px;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 34px;
+  text-align: left;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #c89f2d;
+  background-color: rgba(200, 159, 45, 0.98);
+  font-style: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.reserve-button:hover,
+.reserve-button:focus {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #c89f2d;
+  cursor: pointer;
+}
+
+.form__element--date,
+.form__element--party {
+  cursor: pointer;
+}
+
+.form__element--date::-webkit-inner-spin-button,
+.form__element--date::-webkit-clear-button {
+  -webkit-appearance: none;
+  display: none;
+}
+
+.form__element--date::-webkit-input-placeholder {
+  display: block;
+  background: url(/images/deco-image/picker-indicator.png) no-repeat 92.5% 40%;
+}
+
+.form__element--date::-webkit-calendar-picker-indicator {
+  display: block;
+  background: url(/images/deco-image/picker-indicator.png) no-repeat 50% 50%;
+  margin-right: 10px;
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+}
+
+.form__element--party {
+  -webkit-appearance: none;
+  background-image: url(/images/deco-image/party-icon.png);
+  background-repeat: no-repeat;
+  background-position: 94% 50%;
+  -webkit-appearance: none;
+}
+
+.reserve {
+  max-width: 1600px;
+  margin: 0px auto;
+  box-shadow: 0 0 50px #333;
+  background-image: url(/images/deco-image/reserve-background.png);
+}
+
+.content-block {
+  max-width: 1250px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 110px 102px 40px;
+}
+
+.img-block {
+  width: 570px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.food {
+  display: block;
+}
+
+.reserve-now {
+  max-width: 430px;
+}
+
+.motivation {
+  margin-bottom: 30px;
+}
+
+.reserve-title {
+  font-family: "Yeseva One", display;
+  font-style: normal;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+  color: #cc9900;
+  margin-bottom: 20px;
+}
+
+.reserve-title::after {
+  content: "";
+  display: block;
+  margin: 20px auto 0px;
+  width: 250px;
+  height: 26px;
+}
+
+.reserve-title::after {
+  background: url(../images/deco-image/about-title-decoration.png) no-repeat 50% 50%;
+}
+
+.motivation__disc {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #4c4c4c;
+}
+
+.motivation .motivation__disc:nth-child(2) {
+  margin-bottom: 14px;
+}
+
+/* Adaptive background:
+Add
+background-image: url(...);
+before using this selector
+Use @extend %selector-name*/
+
+/* Mixins for 
+for site content location blocks */
+
+/* Mixin 
+entering text parameters */
+
+/* Mixins for Heading 2 site LAMBDA
+use margin-bottom with header-two... mixins */
+
+/* Mixins for positioning
+indoor units */
+
+/* Mixin sizes and
+design of form blocks */
+
+.reserve,
+.reviews,
+.quote {
+  margin: 0px auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+/* Mixins for 
+for site content location blocks */
+
+/* Mixin 
+entering text parameters */
+
+/* Mixins for Heading 2 site LAMBDA
+use margin-bottom with header-two... mixins */
+
+/* Mixins for positioning
+indoor units */
+
+/* Mixin sizes and
+design of form blocks */
+
+.reviews {
+  max-width: 1600px;
+  margin: 0px auto;
+  box-shadow: 0 0 50px #333;
+  background-image: url(/images/deco-image/reviews-background.jpg);
+}
+
+.container-reviews {
+  max-width: 1250px;
+  margin: 0px auto;
+  padding: 100px 0px;
+}
+
+.quote {
+  max-width: 770px;
+  margin: 0px auto;
+  padding: 56px 0px 92px;
+  background-image: url(/images/deco-image/reviews-text-background.png);
+}
+
+.quote-title {
+  font-family: "Yeseva One", display;
+  font-style: normal;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 28px;
+}
+
+.quote-title::after {
+  content: "";
+  display: block;
+  margin: 20px auto 0px;
+  width: 250px;
+  height: 26px;
+}
+
+.quote-title::after {
+  background: url(../images/deco-image/reviews-title-decoration.png) no-repeat 50% 50%;
+}
+
+.quote-block {
+  margin: 0px 70px;
+  position: relative;
+}
+
+.quote-disc {
+  font-family: "Gentium Book Basic", sans-serif;
+  font-style: normal;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 44px;
+  text-align: center;
+  color: #dde0df;
+  margin-bottom: 28px;
+}
+
+.quote-simbol {
+  position: absolute;
+  top: -3px;
+  left: -40px;
+  fill: #f2f4f4;
+  opacity: 0.5;
+}
+
+.quote__author {
+  display: block;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 45px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Adaptive background:
+Add
+background-image: url(...);
+before using this selector
+Use @extend %selector-name*/
+
+/* Mixins for 
+for site content location blocks */
+
+/* Mixin 
+entering text parameters */
+
+/* Mixins for Heading 2 site LAMBDA
+use margin-bottom with header-two... mixins */
+
+/* Mixins for positioning
+indoor units */
+
+/* Mixin sizes and
+design of form blocks */
+
+.reserve,
+.reviews,
+.quote {
+  margin: 0px auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+/* Mixins for 
+for site content location blocks */
+
+/* Mixin 
+entering text parameters */
+
+/* Mixins for Heading 2 site LAMBDA
+use margin-bottom with header-two... mixins */
+
+/* Mixins for positioning
+indoor units */
+
+/* Mixin sizes and
+design of form blocks */
+
+@media (max-width: 1199px) {
+  .img-block {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 1149px) {
+  .content-block {
+    padding-right: 40px;
+    justify-content: center;
+  }
+
+  .img-block {
+    max-width: 550px;
+  }
+}
+
+@media (max-width: 1089px) {
+  .container-reviews,
+  .content-block {
+    padding: 30px 5px;
+  }
+}
+
+@media (max-width: 979px) {
+  .content-block {
+    flex-wrap: wrap;
+  }
+
+  .img-block {
+    width: 540px;
+    margin-right: 0;
+>>>>>>> 3f34c81dd395b103eccb754374b3ec8252106de8
     margin-bottom: 30px;
   }
 }
 
+<<<<<<< HEAD
 @media (max-width: 800px) {
   .reviews-title {
     font-size: 25px;
@@ -1299,10 +1753,17 @@ use margin-bottom with header-two... mixins */
   .receip__one__image {
     padding: 0;
     margin: 0 auto;
+=======
+@media (max-width: 794px) {
+  .container-reviews,
+  .content-block {
+    padding: 10px 0px;
+>>>>>>> 3f34c81dd395b103eccb754374b3ec8252106de8
   }
 }
 
 @media (max-width: 767px) {
+<<<<<<< HEAD
   .header {
     padding-bottom: 100px;
   }
@@ -1498,5 +1959,64 @@ use margin-bottom with header-two... mixins */
   .booknow__text {
     padding-left: 10px;
     padding-right: 10px;
+=======
+  .container-reviews {
+    padding: 0px;
+  }
+
+  .quote {
+    padding: 10px 0px;
+  }
+
+  .img-block {
+    display: none;
+  }
+}
+
+@media (max-width: 543px) {
+  .quote-block {
+    margin: 0px auto;
+  }
+
+  .quote-title,
+  .reserve-title {
+    font-size: 24px;
+  }
+
+  .quote-title:after,
+  .reserve-title:after {
+    width: 180px;
+    margin-top: 0px;
+  }
+
+  .quote-disc {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+
+  .quote__author {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .motivation__disc {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 415px) {
+  .form__input {
+    justify-content: center;
+  }
+
+  .input__element {
+    margin-bottom: 10px;
+  }
+
+  .form__input .input__element:nth-last-child(-n + 2) {
+    margin-bottom: 10px;
+>>>>>>> 3f34c81dd395b103eccb754374b3ec8252106de8
   }
 }

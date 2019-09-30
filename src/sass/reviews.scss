@@ -1,86 +1,60 @@
-#reviews {
-  width: 100%;
-  background-image: url(../images/bgre.jpg);
-  background-position: center;
-  background-size: cover;
+@import './pattern-selectors';
+@import './mixins';
 
+.reviews {
+  @include full-container;
+  background-image: url(/images/deco-image/reviews-background.jpg);
+  @extend %section-background;
 }
 
-.container3 {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  max-width: 1250px;
-  padding-top: 100px;
-  padding-bottom: 100px;
-
+.container-reviews {
+  @include main-container;
+  padding: 100px 0px;
 }
 
-// .reviews__content {
-//   display: flex;
-
-// }
-
-.reviews__columm {
-  display: flex;
-
-  flex-direction: column;
-  flex-wrap: wrap;
+.quote {
   max-width: 770px;
-
-  background: rgba(0, 0, 0,.7);
-  padding-top: 80px;
-  padding-bottom: 76px;
-  padding-left: 70px;
-  padding-right: 70px;
-  border-radius: 5%;
+  @include horizontal-block-center(auto);
+  padding: 56px 0px 92px;
+  background-image: url(/images/deco-image/reviews-text-background.png);
+  @extend %section-background;
 }
 
-.reviews-title {
-  font-family: 'Yeseva One';
-  color: #ffffff;
-  text-align: center;
-  margin-bottom: 24px;
-  font-size: 36px;
-
+.quote-title {
+  @include header-two;
+  @include header-two-white-decor;
+  margin-bottom: 28px;
 }
 
-.reviews-title::after {
-  content: '';
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(../images/divaiderf.png);
-  display: block;
-  width: 248px;
-  height: 24px;
-  margin: 0 auto;
-  margin-top: 14px;
+.quote-block {
+  @include horizontal-block-center(70px);
+  position: relative;
 }
 
-.reviews-texts  {
-  font-family: 'Gentium Book Basic';
-  font-size: 25px;
-  line-height: 45px;
+.quote-disc {
+  @include font-set(
+    'Gentium Book Basic',
+    sans-serif,
+    normal,
+    25px,
+    700,
+    44px,
+    center
+  );
   color: #dde0df;
-  text-align: center;
-  margin-bottom: 71px;
-}
-@media (max-width: 800px) {
-  .reviews-title {
-    font-size: 25px;
-  }
-  .reviews-texts {
-    font-size: 20px;
-    line-height: 35px;
-  }
-  .reviews {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-  .reviews__columm {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
+  margin-bottom: 28px;
 }
 
+.quote-simbol {
+  position: absolute;
+  top: -3px;
+  left: -40px;
+  fill: #f2f4f4;
+  opacity: 0.5;
+}
 
+.quote__author {
+  display: block;
+  @include font-set('Lato', sans-serif, normal, 18px, 400, 45px, center);
+  color: #ffffff;
+}
