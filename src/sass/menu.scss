@@ -3,31 +3,36 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
- }
- .container__menu {
+}
+
+.container__menu {
   max-width: 1250px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   padding: 100px 110px;
   justify-content: space-between;
- }
- .menu__columm1 {
+}
+
+.menu__columm1 {
   display: flex;
   flex-wrap: wrap;
   width: 430px;
- }
- .menu__columm2 {
+}
+
+.menu__columm2 {
   display: flex;
   flex-wrap: wrap;
   width: 430px;
- }
- .menu__item {
+}
+
+.menu__item {
   list-style: none;
   border: 1px solid transparent;
   margin-bottom: 32px;
   padding: 10px;
   position: relative;
+
   &::before {
     display: flex;
     justify-content: center;
@@ -42,28 +47,33 @@
     top: -22px;
     opacity: 0;
   }
+
   .menu__itemss {
     width: 430px;
   }
+
   &:last-of-type {
     margin-bottom: 0;
   }
- }
- .menu__row {
+}
+
+.menu__row {
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 24px;
- }
- .menu__title {
+}
+
+.menu__title {
   font-size: 36px;
   line-height: 43px;
   font-family: 'Yeseva One', display;
   color: #c89f2d;
   text-align: center;
   margin-bottom: 28px;
- }
- .menu__title::after {
+}
+
+.menu__title::after {
   content: '';
   background-repeat: no-repeat;
   background-position: center;
@@ -72,102 +82,121 @@
   height: 24px;
   margin: 0 auto;
   margin-top: 12px;
- }
- .menu__product {
+}
+
+.menu__product {
   font-size: 21px;
   line-height: 24px;
   font-family: 'Yeseva One', display;
   color: #c89f2d;
- }
- .menu__price {
+}
+
+.menu__price {
   font-size: 21px;
   line-height: 24px;
   width: 70px;
   text-align: center;
   font-family: 'Yeseva One', display;
   color: #c89f2d;
- }
- .menu__desc {
+}
+
+.menu__desc {
   font-size: 16px;
   line-height: 24px;
   font-family: 'Lato', sans-serif;
   color: #4c4c4c;
   border-top: 1px solid #e3dcbd;
   padding-top: 10px;
- }
- .menu__appetisers {
+}
+
+.menu__appetisers {
   margin-bottom: 61px;
- }
- .menu__starters {
+}
+
+.menu__starters {
   margin-bottom: 61px;
- }
- .menu__item:hover {
+}
+
+.menu__item:hover {
   border: 1px solid #e3dcbd;
- }
- .menu__item:hover::before {
+}
+
+.menu__item:hover::before {
   opacity: 1;
- }
- @media (max-width: 1200px) {
+}
+
+@media (max-width: 1200px) {
   .menu__columm1 {
     margin: 0 auto;
     width: 430px;
   }
+
   .menu__columm2 {
     margin: 0 auto;
     width: 430px;
   }
+
   .container__menu {
     padding: 50px;
     margin: 0 auto;
   }
- }
- @media (max-width: 1024px) {
+}
+
+@media (max-width: 1024px) {
   .menu__columm1 {
     margin: 0 auto;
     width: 430px;
   }
+
   .menu__columm2 {
     margin: 0 auto;
     width: 430px;
   }
+
   .container__menu {
     padding: 50px 10px;
     margin: 0 auto;
   }
- }
- @media (max-width: 780px) {
+}
+
+@media (max-width: 879px) {
+  .menu__appetisers {
+    margin-bottom: 20px;
+  }
+
+  .menu__salads {
+    margin-bottom: 20px;
+  }
+
+  .menu__starters {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 780px) {
   .menu__columm1 {
     margin: 0 auto;
   }
-  .menu__appetisers {
-    margin-bottom: 0;
+}
+
+@media (max-width: 500px) {
+  .container__menu {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
-  .menu__starters {
-    margin-bottom: 0;
-  }
- }
- @media (max-width: 500px) {
-   .container__menu {
-     padding-top: 50px;
-     padding-bottom: 50px;
-   }
+
   .menu__columm1 {
     width: 300px;
     margin: 0 auto;
   }
+
   .menu__columm2 {
     width: 300px;
     margin: 0 auto;
   }
+
   .container__menu {
     // padding: 0;
     margin: 0 auto;
   }
- }
-
-
-
-
-
-
-
+}

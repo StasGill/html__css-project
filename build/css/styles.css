@@ -1596,6 +1596,20 @@ design of form blocks */
   }
 }
 
+@media (max-width: 879px) {
+  .menu__appetisers {
+    margin-bottom: 20px;
+  }
+
+  .menu__salads {
+    margin-bottom: 20px;
+  }
+
+  .menu__starters {
+    margin-bottom: 20px;
+  }
+}
+
 @media (max-width: 794px) {
   .container-reviews,
   .content-block {
@@ -1606,14 +1620,6 @@ design of form blocks */
 @media (max-width: 780px) {
   .menu__columm1 {
     margin: 0 auto;
-  }
-
-  .menu__appetisers {
-    margin-bottom: 0;
-  }
-
-  .menu__starters {
-    margin-bottom: 0;
   }
 }
 
