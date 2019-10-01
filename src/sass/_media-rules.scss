@@ -7,7 +7,9 @@
 @media (max-width: 1149px) {
   .content-block {
     padding-right: 40px;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .img-block {
@@ -24,7 +26,8 @@
 
 @media (max-width: 979px) {
   .content-block {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 
   .img-block {
@@ -90,7 +93,9 @@
 
 @media (max-width: 415px) {
   .form__input {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .input__element {
