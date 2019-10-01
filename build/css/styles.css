@@ -688,6 +688,8 @@ template {
 }
 
 .container__two {
+  max-width: 1250px;
+  margin: 0 auto;
   display: flex;
   justify-content: flex-end;
   padding: 100px 40px 100px 0;
@@ -1090,7 +1092,10 @@ design of form blocks */
   max-width: 1600px;
   margin: 0px auto;
   box-shadow: 0 0 50px #333;
+  max-width: 100%;
   background-image: url(../images/deco-image/reserve-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .content-block {
@@ -1221,6 +1226,7 @@ design of form blocks */
   max-width: 1600px;
   margin: 0px auto;
   box-shadow: 0 0 50px #333;
+  max-width: 100%;
   background-image: url(../images/deco-image/reviews-background.jpg);
 }
 

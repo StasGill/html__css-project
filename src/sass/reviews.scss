@@ -3,6 +3,7 @@
 
 .reviews {
   @include full-container;
+  max-width: 100%;
   background-image: url(../images/deco-image/reviews-background.jpg);
   @extend %section-background;
 }

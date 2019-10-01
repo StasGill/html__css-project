@@ -4,7 +4,10 @@
 
 .reserve {
   @include full-container;
+  max-width: 100%;
   background-image: url(../images/deco-image/reserve-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   @extend %section-background;
 }
 
