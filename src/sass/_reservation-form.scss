@@ -2,8 +2,11 @@ $forange: #c89f2d !global;
 
 .reserve-form {
   @include flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .form__input {
@@ -13,7 +16,10 @@ $forange: #c89f2d !global;
 
 .input__element {
   @include flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: 26px;
 }
 
@@ -73,7 +79,27 @@ $forange: #c89f2d !global;
   display: none;
 }
 
+.form__element--date::-moz-inner-spin-button,
+.form__element--date::-moz-clear-button {
+  display: none;
+}
+
+.form__element--date::-ms-inner-spin-button,
+.form__element--date::-ms-clear-button {
+  display: none;
+}
+
 .form__element--date::-webkit-input-placeholder {
+  display: block;
+  background: url(/images/deco-image/picker-indicator.png) no-repeat 92.5% 40%;
+}
+
+.form__element--date::-moz-input-placeholder {
+  display: block;
+  background: url(/images/deco-image/picker-indicator.png) no-repeat 92.5% 40%;
+}
+
+.form__element--date::-ms-input-placeholder {
   display: block;
   background: url(/images/deco-image/picker-indicator.png) no-repeat 92.5% 40%;
 }
@@ -86,8 +112,23 @@ $forange: #c89f2d !global;
   opacity: 1;
 }
 
+.form__element--date::-moz-calendar-picker-indicator {
+  display: block;
+  background: url(/images/deco-image/picker-indicator.png) no-repeat 50% 50%;
+  margin-right: 10px;
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+}
+
+.form__element--date::-ms-calendar-picker-indicator {
+  display: block;
+  background: url(/images/deco-image/picker-indicator.png) no-repeat 50% 50%;
+  margin-right: 10px;
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+}
+
 .form__element--party {
-  -webkit-appearance: none;
   background-image: url(/images/deco-image/party-icon.png);
   background-repeat: no-repeat;
   background-position: 94% 50%;
